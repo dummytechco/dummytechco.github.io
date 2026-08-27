@@ -1,0 +1,378 @@
+```css id="r0q8dk"
+/* =========================================
+   MYCOMPANY — PIXEL LANDING PAGE
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    min-height: 100vh;
+
+    background:
+        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px),
+        #101218;
+
+    background-size: 8px 8px;
+
+    color: #e8edf2;
+
+    font-family: "Courier New", monospace;
+
+    image-rendering: pixelated;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+header {
+    min-height: 55vh;
+
+    padding: 100px 10%;
+
+    display: flex;
+
+    align-items: center;
+
+    border-bottom: 4px solid #e8edf2;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+header::before {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    right: 12%;
+    top: 25%;
+
+    background: #e8edf2;
+
+    opacity: 0.05;
+
+    box-shadow:
+        18px 18px 0 #e8edf2,
+        -18px 36px 0 #e8edf2,
+        36px -18px 0 #e8edf2;
+}
+
+
+.hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 900px;
+}
+
+
+.eyebrow {
+    margin-bottom: 25px;
+
+    font-size: 13px;
+
+    letter-spacing: 4px;
+
+    opacity: 0.5;
+}
+
+
+h1 {
+    margin: 0;
+
+    font-size: clamp(60px, 11vw, 140px);
+
+    line-height: 0.8;
+
+    letter-spacing: -8px;
+
+    text-shadow:
+        6px 6px 0 #000,
+        12px 12px 0 rgba(255,255,255,0.1);
+
+    transform: rotate(-1deg);
+}
+
+
+.tagline {
+    max-width: 650px;
+
+    margin-top: 40px;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    opacity: 0.65;
+}
+
+
+/* =========================================
+   MAIN
+   ========================================= */
+
+main {
+    padding: 90px 10%;
+}
+
+
+.products {
+    max-width: 1000px;
+
+    margin: auto;
+}
+
+
+.section-label {
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    opacity: 0.45;
+}
+
+
+h2 {
+    display: inline-block;
+
+    margin: 15px 0 45px;
+
+    padding: 12px 18px;
+
+    background: #e8edf2;
+
+    color: #101218;
+
+    font-size: 30px;
+
+    box-shadow:
+        7px 7px 0 #000;
+
+    transform: rotate(0.7deg);
+}
+
+
+/* =========================================
+   PRODUCT BUTTONS
+   ========================================= */
+
+.product-button {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    width: 100%;
+
+    margin-bottom: 25px;
+
+    padding: 28px;
+
+    border: 3px solid #e8edf2;
+
+    color: #e8edf2;
+
+    text-decoration: none;
+
+    box-shadow:
+        8px 8px 0 #000;
+
+    transition: 0.12s;
+
+    transform: rotate(-0.4deg);
+}
+
+
+.product-button:nth-of-type(2) {
+    transform: rotate(0.5deg);
+}
+
+
+.product-button:hover {
+    transform: translate(4px, 4px);
+
+    box-shadow:
+        3px 3px 0 #000;
+}
+
+
+/* Number */
+
+.product-number {
+    font-size: 13px;
+
+    opacity: 0.4;
+
+    min-width: 35px;
+}
+
+
+/* Product info */
+
+.product-info {
+    flex: 1;
+}
+
+
+.product-info h3 {
+    margin: 0 0 8px;
+
+    font-size: 26px;
+
+    letter-spacing: 2px;
+}
+
+
+.product-info p {
+    margin: 0;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    opacity: 0.55;
+}
+
+
+/* Arrow */
+
+.arrow {
+    font-size: 30px;
+
+    opacity: 0.5;
+}
+
+
+/* =========================================
+   DISABLED PROJECT
+   ========================================= */
+
+.product-button.disabled {
+    opacity: 0.3;
+
+    border-style: dashed;
+
+    cursor: default;
+
+    box-shadow: none;
+
+    transform: rotate(-0.5deg);
+}
+
+
+.product-button.disabled:hover {
+    transform: rotate(-0.5deg);
+
+    box-shadow: none;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    padding: 35px 10%;
+
+    border-top: 3px solid #e8edf2;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    opacity: 0.5;
+}
+
+
+footer a {
+    margin-left: 20px;
+
+    color: #e8edf2;
+
+    text-decoration: none;
+}
+
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 80px 7%;
+    }
+
+
+    h1 {
+        font-size: 65px;
+
+        letter-spacing: -5px;
+    }
+
+
+    main {
+        padding: 70px 7%;
+    }
+
+
+    .product-button {
+        padding: 22px;
+
+        gap: 15px;
+    }
+
+
+    .product-info h3 {
+        font-size: 20px;
+    }
+
+
+    .product-info p {
+        font-size: 12px;
+    }
+
+
+    footer {
+        padding: 30px 7%;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+}
+```
